@@ -29,13 +29,13 @@
 <body>
 
 <header>
-  <nav class="navbar navbar-expand-lg fixed-top" id="dynamic">
+  <nav class="navbar navbar-expand-lg" id="dynamic">
     <div class="container">
       <a class="navbar-brand" href="#">
         <h1>Bitzoome</h1>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon bg-dark"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
@@ -62,15 +62,50 @@
 <main>
   <section class="landing-section">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/background/bg-9.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item activ" style="background: linear-gradient(rgba(251, 239, 239, 0.109),rgba(255, 0, 0, 0.13)), url(img/background/bg-9.jpg)">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <h1 class="title">Bitcoin <span>currency</span></h1>
+                  <h1 class="title"><span>Secure</span> bitcoin earning</h1>
+                  <h4 class="text">Start earning bitcoin almost imediately with no expensive equipment to buy</h4>
+                  <button class="btn btn-register">register</button>
+                  <button class="btn btn-login">login</button>
+                </div>
+                <div class="col-md-5">
+                  <div class="slide-img">
+                    <img src="img/slider/earth.png" alt="" class="rotate">
+                    <img src="img/slider/bitcoin.png" alt="" class="bitcoin">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="img/background/bg-9.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/background/bg-9.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item active" style="background: linear-gradient(rgba(202, 202, 202, 0.288),rgba(255, 0, 0, 0.13)), url(img/background/bg-9.jpg)">
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <h1 class="title">bitzoome <span> network</span> <span>easy and</span> secure way</h1>
+                  <!-- <h1 class="title"><span> Start earning</span></h1> -->
+                  <h4 class="text">Earning bitcoin has never been easy we do the network, you collect the coin</h4>
+                  <button class="btn btn-register">register</button>
+                  <button class="btn btn-login">login</button>
+                </div>
+                <div class="col-md-5">
+                  <div class="slide-img">
+                   
+                    <img src="img/slider/rock.png" alt="" class="field">
+                    <img src="img/slider/agent.png" alt="" class="agent">
+                    <img src="img/slider/plant.png" alt="" class="plant">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -84,16 +119,16 @@
     </div>
   </section>
   <section class="defination__section">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-8 col-10 mx-auto">
+        <div class="col-md-6 col-10 mx-auto">
           <div class="definition__image">
             <img src="img/background/bg-laptop.png" alt="">
           </div>
         </div>
-        <div class="col-md-4 col-10 mx-auto">
+        <div class="col-md-6 col-10 mx-auto">
           <div class="definition__content">
-            <h4 class="text-secondary">what is bitcoin?</h4>
+            <h5 class="text-secondary min-title">What is bitcoin?</h5>
             <div class="section__title">
               <h2>new currency bitcoin</h2>
               <div class="under-line"></div>
@@ -101,14 +136,15 @@
             <h6 class="content__title">
               Bitcoin mining takes time, money, and a lot of processing power which means it’s not easy to get started on your own and it costs thousands of dollars</h6>
               <p class="content">But when you join Bitzoome, you’ll start earning Bitcoin almost immediately with no expensive equipment to buy. No sky-high power bills. And no software to install. We take care of all of the details. You get the rewards. Are you ready to start mining?</p>
-              <button class="btn ">join us</button>
-              <a href="investment.html" class="btn ">learn more</a>
+              <button class="btn button">join us</button>
+              <a href="investment.html" class="btn button-dark">learn more</a>
+              <img src="img/background/bg-coin.png" alt="">
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section classs="why-section">
+  <section class="why-section">
     <div class="container">
       <div class="section__title">
         <h4>trade and mine bitcoin</h4>

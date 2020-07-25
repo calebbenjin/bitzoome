@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +14,16 @@ html, body {
 :root {
   --primaryColor: #00FFDE;
   --secondaryColor: #007969;
-  --transition: all 0.3s linear;;
+  --greyColor: #eee;
+  --transition: all 0.3s linear;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --darkGrey: #757575;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
 a {
   text-decoration: none;
   color: #333;
@@ -24,10 +32,20 @@ ul li {
   list-style: none;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
 header nav {
   transition: var(--transition);
+  padding-top: 1.5rem;
+}
+header nav .container{
   padding-top: 1rem;
 }
+
 header nav .navbar-brand h1 {
   font-weight: 700;
   color: #eee;
@@ -38,11 +56,282 @@ header nav ul li a {
   font-size: 18px;
   margin-left: 20px;
   transition: var(--transition);
+  text-transform: uppercase;
 }
 header nav ul li a:hover {
   color: var(--secondaryColor);
 }
 .newClass {
   background: #000;
+}
+
+.carousel-item {
+  height: 90vh;
+}
+.carousel-caption {
+  position: absolute;
+  top: 35%;
+  text-align: left;
+}
+
+.slide-img {
+  position: relative;
+}
+.slide-img .rotate{
+  width: 90%;
+}
+
+.slide-img .bitcoin {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  width: 50%;
+}
+
+.carousel-caption .title span {
+  color: var(--primaryColor);
+}
+
+.slide-img .rotate {
+  -webkit-animation: rotation 15s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+.slide-img .field {
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  width: 80%;
+}
+.slide-img .agent {
+  position: absolute;
+  top: -7rem;
+  left: 5%;
+  width: 60%;
+}
+.slide-img .plant {
+  position: absolute;
+  bottom: -15rem;
+  left: 65%;
+  width: 80%;
+  display: none;
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+
+.carousel-caption .btn-register {
+  background: var(--secondaryColor);
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  transition: var(--transition);
+}
+.carousel-caption .btn-register:hover {
+  background: #fff;
+  color: var(--secondaryColor);
+}
+
+.carousel-caption .btn-login {
+  background: #fff;
+  color: var(--secondaryColor);
+  font-weight: 700;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  transition: var(--transition);
+}
+
+.carousel-caption .btn-login:hover {
+  background: var(--secondaryColor);
+  color: #fff;
+}
+
+.defination__section {
+  padding: 6em 0;
+}
+
+.defination__section .definition__content {
+  padding-right: 10em;
+  padding-top: 4em;
+  position: relative;
+}
+
+.defination__section .content__title {
+  font-weight: bold;
+  color: var(--darkGrey);
+  margin-bottom: 20px;
+}
+
+.definition__content img {
+  position: absolute;
+  top: 13em;
+  z-index: -99;
+  width: 100%;
+}
+
+.defination__section .definition__content h4{
+  text-transform: uppercase;
+}
+.section__title h2{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.defination__section .section__title .under-line {
+  margin: 0;
+}
+.section__title{
+  margin-bottom: 30px;
+  position: relative;
+}
+.section__title h4{
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.section__title .under-line {
+  width: 80px;
+  height: 5px;
+  background: var(--secondaryColor);
+  margin: 0 auto;
+}
+
+.button {
+  background: var(--secondaryColor);
+  color: #fff;
+  padding: 10px 40px;
+  font-weight: bold;
+  margin: 1em 0.5em;
+  text-transform: uppercase;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  z-index: 99;
+}
+
+.button:hover {
+  margin-top: 0.2em;
+  color: #fff;
+}
+
+.button-dark {
+  background: #333;
+  color: #fff;
+  padding: 10px 40px;
+  font-weight: bold;
+  margin: 1em 0;
+  text-transform: uppercase;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+.button-dark:hover {
+  margin-top: 0.2em;
+  color: #fff;
+}
+
+/* Why Section */
+.why-section {
+  padding: 6rem 0;
+  background: var(--greyColor);
+}
+.why-section .section__title {
+  text-align: center;
+}
+
+.why-section .section__description {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: var(--darkGrey);
+}
+
+.why-section .offers__cards .card{
+  padding: 25px;
+  text-align: center;
+  height: 350px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+.why-section .offers__cards .card:hover{
+  box-shadow: none;
+  border: solid 3px var(--secondaryColor);
+}
+
+.why-section .offers__cards .card img{
+  width: 100px;
+  margin: 0 auto;
+}
+
+.why-section .card .card-title {
+  color: var(--secondaryColor);
+  font-weight: bold;
+}
+
+@media all and (max-width: 700px) {
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+  }
+  header nav {
+    transition: var(--transition);
+    padding-top: 1.5rem;
+    background: #000;
+    width: 100%;
+  }
+  header nav .container {
+    padding-right: 40rem;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+  }
+  .carousel-caption h1 {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+  }
+
+  .slide-img {
+    margin-top: 2rem;
+  }
+
+  .slide-img .agent {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 40%;
+  }
+  .slide-img .plant {
+    position: absolute;
+    top: -1rem;
+    left: 40%;
+    width: 40%;
+  }
+
+  .defination__section .definition__content {
+    padding-right: 0em;
+  }
 }
 
