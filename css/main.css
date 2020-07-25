@@ -284,6 +284,67 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 
+/* Facts Section */
+
+.facts-section {
+  padding: 6em 0;
+  background: url(../img/background/bg-9.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.facts-section .rocket {
+  position: relative;
+}
+.rocket .rotate-rocket {
+  transform: rotate(40deg);
+  z-index: 99;
+}
+.rocket .fire-gif {
+  position: absolute;
+  top: 17em;
+  left: -1rem;
+  z-index: -0;
+  transform: rotate(40deg);
+}
+
+.facts-section .facts__content h4 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2em;
+}
+.facts-section .facts__content h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4em;
+  color: var(--primaryColor);
+  margin-bottom: 0.3em;
+}
+
+.facts-section .facts__content .fact-text {
+  font-size: 1.1em;
+}
+
+.facts-section .facts__content .counter ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.facts-section .facts__content .counter ul h2 {
+  font-size: 2.1em;
+  font-weight: bold;
+  color: var(--primaryColor);
+}
+.facts-section .facts__content .counter ul h2 .far, .fas {
+  color: #fff !important;
+}
+.facts-section .facts__content .counter ul li span {
+  text-transform: uppercase;
+}
+
 @media all and (max-width: 700px) {
   header {
     position: fixed;
